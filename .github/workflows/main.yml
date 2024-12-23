@@ -19,11 +19,6 @@ jobs:
           php-version: '8.4'
           extensions: imagick, swoole, composer:v2
 
-      - name: Build project (replace with your build commands)
-        run: |
-          # Your custom build commands here
-          cp config.php build/  # Example: Copy config file
-
       - name: List output files
         run: find build/ -print
 
