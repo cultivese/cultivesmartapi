@@ -30,4 +30,4 @@ jobs:
           port: 21
           password: ${{ secrets.FTP_PASSWORD }}
           local-dir: ./
-          server-dir: domains/cultivesmart.com.br/public_html/api
+          server-dir: domains/cultivesmart.com.br/public_html/api/
