@@ -29,5 +29,5 @@ jobs:
           username: u746034674
           port: 21
           password: ${{ secrets.FTP_PASSWORD }}
-          local-dir: build/
+          local-dir: ./
           server-dir: domains/cultivesmart.com.br/public_html/api
