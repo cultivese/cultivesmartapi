@@ -20,7 +20,7 @@ jobs:
           extensions: imagick, swoole, composer:v2
 
       - name: List output files
-        run: find build/ -print
+        run: find ./ -print
 
       - name: 📂 Sync files
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
