@@ -1,9 +1,9 @@
+name: 🚀 Deploy cultivesmart on push
+
 on:
   push:
     branches:
       - main
-
-name: 🚀 Deploy cultivesmart on push
 
 jobs:
   web-deploy:
@@ -13,8 +13,10 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3
 
-      - name: Setup PHP environment
-        uses: shasunkumarranjan/php-action@v1
+      - name: Setup PHP
+        uses: actions/setup-php@v4
+        with:
+          php-version: '8.1' # Specify the desired PHP version
 
       - name: Install composer dependencies
         run: composer install
@@ -27,7 +29,7 @@ jobs:
       - name: List output files
         run: find build/ -print
 
-      - name:  հղ Sync files
+      - name: 📂 Sync files
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
           server: 46.202.145.116
