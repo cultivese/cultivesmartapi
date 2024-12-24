@@ -2,6 +2,8 @@
 require './api/fornecedor.php';
 require 'db/connection.php';
 
+header("Access-Control-Allow-Headers: Authorization, Content-Type");
+header("Access-Control-Allow-Origin: *");
 header("Content-Type: application/json");
     
 // $method = $_SERVER['REQUEST_METHOD'];
