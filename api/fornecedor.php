@@ -57,7 +57,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     if (empty($fornecedores)) {
         echo json_encode(['message' => 'Nenhum fornecedor encontrado']);
     } else {
-        echo json_encode(['fornecedores' => $fornecedores]);
+        echo json_encode($fornecedores);
     }
     }
   else {
